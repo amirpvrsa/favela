@@ -4,3 +4,4 @@ city = input("where did you grow up?\n")
 pet = input("whats the name of your pet?\n")
 print(city +" "+ pet)
 print("sjdoja")
+# kose mamanet khamenei
