@@ -13,5 +13,7 @@ a=float(input("what was the total bill?"))
 b=float(input("percentage? 10,12,15 ?"))
 c=float(input("beyne chan nafar split beshe ?"))
 # print(type(a))
+
 d=(a*((100+b)/100))/c
+
 print(f"each person should pay {round(d,2)}")

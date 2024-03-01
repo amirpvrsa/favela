@@ -1,0 +1,39 @@
+print("Welcome to amirfavela pizza shop! this shit is based on python")
+size = input("what is you desired pizza size? S,M,L\n")
+peperoni = input("do you want peperoni on it ? Y or N\n")
+cheese = input("do you want extra cheese on it ? Y or N\n")
+if size  == "S" :
+    p = 15
+    if peperoni == "Y" :
+        p += 2
+    if cheese == "Y" :
+            p += 1
+            print(f"Thanks for your order.\n your total order is {p}")
+    elif cheese == "N" :
+            print(f"Thanks for your order.\n your total order is {p}")
+    elif peperoni == "N" :
+        print(f"Thanks for your order.\n your total order is {p}")
+elif size  == "M" :
+    p = 20
+    if peperoni == "Y" :
+        p +=3
+    if cheese == "Y" :
+            p += 1
+            print(f"Thanks for your order.\n your total order is {p}")
+    elif cheese == "N" :
+            print(f"Thanks for your order.\n your total order is {p}")
+    elif peperoni == "N" :
+        print(f"Thanks for your order.\n your total order is {p}")
+elif size  == "L" :
+    p = 25
+    if peperoni == "Y" :
+        p += 3
+    if cheese == "Y" :
+            p += 1
+            print(f"Thanks for your order.\n your total order is {p}")
+    elif cheese == "N" :
+            print(f"Thanks for your order.\n your total order is {p}")
+    elif peperoni == "N" :
+        print(f"Thanks for your order.\n your total order is {p}")
+else:
+    print("PUT correcet size baby :*")
