@@ -1,0 +1,8 @@
+# fruit = ["apple","peach","pear"]
+# for kir in fruit:
+#     print(kir)
+
+student_heiights = input().split()
+for n in range(0,len(student_heiights)):
+    student_heiights[n]=int(student_heiights[n])
+print(student_heiights)
