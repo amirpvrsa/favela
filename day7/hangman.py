@@ -79,7 +79,6 @@ while a<word_length and live!=0:
         letter = chosen_word[position]
         if letter == guess:
             display[position] = letter
-            
             a+=1
             b=a
     if b != a:
