@@ -54,7 +54,7 @@ letter=[]
 symbol=[]
 number=[]
 for n in range(0,nr_letters+1):
-    rand=random.randint(1,51)
+    rand=random.randint(1,50)
     letter.append(letters[rand])
 
 
