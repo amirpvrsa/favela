@@ -83,11 +83,7 @@ while a<word_length and live!=0:
             b=a
     if b != a:
         live-=1
-        print(stages[live])
-    if live==0:
-        print("you looose")
-        
-    print(f"{'  '.join(display)}")
-
-
-print(display)
+        print(stages[live])   
+    print(f"{''.join(display)}")
+if live==0:
+    print("you looose")
