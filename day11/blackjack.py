@@ -13,9 +13,9 @@ def cardpick_user():
 #     pc_card.append(cards[random.randint(0,12)])
 #     return pc_card
 
-wanna_play = input("do you wanna play ? type y/n")
+wanna_play = input("do you wanna play ? type y/n : ")
 
-if wanna_play =="y":
+while wanna_play =="y":
     p=[cardpick_user(),cardpick_user()]
     sum_p = 0
     for l in p:
@@ -26,7 +26,7 @@ if wanna_play =="y":
     game=True
     print(f"computer's first card : {c}")
     while sum_p<21 and game==True:
-        hit_stay= input("Type 'y' to get another card and 'n' to stay on this hand")
+        hit_stay= input("Type 'y' to get another card and 'n' to stay on this hand : ")
         if hit_stay == "y":
             p.append(cardpick_user())
             sum_p = 0
@@ -45,18 +45,23 @@ if wanna_play =="y":
             print(f"your cards : {p}, current score : {sum_p}")
     
     if sum_p>21:
+        print(f"pc= {c}")
+        print(f"you = {p}")
         print("you lose.")
-        print(f"pc= {c}")
-        print(f"you = {p}")
     elif sum_p>pc_sum:
-        print("you won.")
         print(f"pc= {c}")
         print(f"you = {p}")
+        print("you won.")
     elif pc_sum>sum_p and pc_sum<21:
+        print(f"pc= {c}")
+        print(f"you = {p}")
         print("you loose.")
-        print(f"pc= {c}")
-        print(f"you = {p}")
     elif pc_sum>21:
-        print("you won.")
         print(f"pc= {c}")
         print(f"you = {p}")
+        print("you won.")
+    elif pc_sum==sum_p:
+        rint(f"pc= {c}")
+        print(f"you = {p}")
+        print("draw.")
+    wanna_play = input("do you wanna play ? type y/n : ")   
