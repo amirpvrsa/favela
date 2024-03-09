@@ -2,10 +2,9 @@
 from MENU import menu
 from MENU import resource
 
-off = False
 
 def req_coffee():
-    a=input("what would you like ? (esspresso(1.5$)/latte](2.5$)/cappuchino(3$)) : ")
+    a=input("what would you like ? (espresso(1.5$)/latte](2.5$)/cappuccino(3$)) : ")
     return a
 
 
@@ -20,16 +19,6 @@ def req_money():
     return total_money
 
 
-
-
-def money_comparion(coffee, money):
-    print(menu[coffee]["cost"])
-    print(money)
-    if menu[coffee]["cost"] > money:
-        print("money is not enough!")
-        return False
-    
-live=True
 def resource_changer_checker(coffee,money):
     if resource["water"] < menu[coffee]["ingredients"]["water"]:
         print("sorry there is not enough water!")
@@ -47,6 +36,7 @@ def resource_changer_checker(coffee,money):
         resource["money"] = money - menu[coffee]["cost"]
         print(f"here is ${resource["money"]} change.")
         print(f"here is your {coffee}, enjoy it!")
+
 
 def coffee():
     live=True
